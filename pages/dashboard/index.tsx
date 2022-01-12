@@ -12,8 +12,13 @@ import {
   Text,
   VStack
 } from '@chakra-ui/react'
+import { useEffect } from 'react'
+import mqttServer from '../../src/server/mqtt'
 
 function DashBoard() {
+  useEffect(() => {
+    const mqtt = mqttServer()
+  }, [])
   return (
     <Box w="100vw" h="100vh">
       <Flex w="50%" direction="column">
@@ -73,11 +78,18 @@ function DashBoard() {
           <StatHelpText>Horário: 13:00</StatHelpText>
         </Stat>
       </Flex>
-      <Flex w="50%" direction="column" >
+      <Flex w="50%" direction="column">
         <Text>Janelas</Text>
-        <Flex alingItens="center" justify='space-evenly'>
+        <Flex alingItens="center" justify="space-evenly">
           <VStack>
-            <Text border='1px solid' p='0.2rem' borderRadius='0.3rem' fontSize='1.2rem'>aberta</Text>
+            <Text
+              border="1px solid"
+              p="0.2rem"
+              borderRadius="0.3rem"
+              fontSize="1.2rem"
+            >
+              aberta
+            </Text>
             <Button>
               <Text>Fechar</Text>
             </Button>
