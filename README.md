@@ -37,3 +37,24 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ## Images
 
 <a href="https://www.flaticon.com/free-icons/lamp" title="lamp icons">Lamp icons created by Freepik - Flaticon</a>
+
+## Instruções
+
+
+<p>Código frontend</p>
+<a href="https://github.com/grupobigfer/intranet-frontend.git">https://github.com/grupobigfer/intranet-frontend.git</a>
+<p>
+executar  "yarn" para instalar as dependências 
+executar "yarn run dev" para inicializar</p>
+
+<p>Código backend</p>
+<a href="https://github.com/ErickNagoski/MqttDashBoardBackend.git">https://github.com/ErickNagoski/MqttDashBoardBackend.git</a>
+<p>
+executar  "npm i para instalar as dependências 
+executar "npm start" para inicializar</p>
+
+<p>Importante que os dois estejam rodando simultaneamente.</p>
+<p>
+Front utiliza o endereço localhost:3000
+Back utiliza o endereço localhost:3004
+</p>
